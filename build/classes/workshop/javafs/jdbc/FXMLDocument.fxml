@@ -6,9 +6,30 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="workshop.javafs.jdbc.FXMLDocumentController">
-    <children>
-        <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-        <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
-    </children>
+<AnchorPane id="AnchorPane" prefHeight="380.0" prefWidth="350.0" visible="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="workshop.javafs.jdbc.FXMLDocumentController">
+  <children>
+    <ScrollPane layoutX="14.0" layoutY="14.0" prefHeight="300.0" prefWidth="300.0">
+      <content>
+        <VBox prefHeight="247.0" prefWidth="299.0">
+          <children>
+            <MenuBar prefWidth="300.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Registration">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Seller" />
+                    <MenuItem mnemonicParsing="false" text="Department" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+          </children>
+        </VBox>
+      </content>
+    </ScrollPane>
+  </children>
 </AnchorPane>
