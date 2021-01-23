@@ -6,7 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="380.0" prefWidth="350.0" visible="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="workshop.javafs.jdbc.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="380.0" prefWidth="350.0" visible="true" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="gui.FXMLDocumentController">
   <children>
     <ScrollPane layoutX="14.0" layoutY="14.0" prefHeight="300.0" prefWidth="300.0">
       <content>
@@ -16,13 +16,13 @@
               <menus>
                 <Menu mnemonicParsing="false" text="Registration">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="Seller" />
-                    <MenuItem mnemonicParsing="false" text="Department" />
+                    <MenuItem mnemonicParsing="false" onAction="#onMenuItemSellerAction" text="Seller" fx:id="menuItemSeller" />
+                    <MenuItem mnemonicParsing="false" onAction="#onMenuItemDepartmentAction" text="Department" fx:id="menuItemDepartment" />
                   </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="Help">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
+                    <MenuItem mnemonicParsing="false" onAction="#onMenuItemAboutAction" text="About" fx:id="menuItemAbout" />
                   </items>
                 </Menu>
               </menus>
